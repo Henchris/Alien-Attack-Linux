@@ -16,7 +16,7 @@ Example project from 'SDL Game Development' by Shaun Mitchell
 
 ### Download & compile the latest version SDL2 (including image, ttf, and mixer extensions).  Please see https://gist.github.com/WillSams/e2bb2874ace22b90f90f
 
-### Install support libraries for Alien
+### Install support libraries for Alien Attack
     sudo apt-get install libtinyxml-dev
     sudo apt-get install tiled  #for the .tmx files, Tiled Map Editor
 
