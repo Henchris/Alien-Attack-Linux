@@ -16,9 +16,9 @@ Example project from 'SDL Game Development' by Shaun Mitchell
 
 ### Download & compile the latest version SDL2 (including image, ttf, and mixer extensions).  Please see https://gist.github.com/WillSams/e2bb2874ace22b90f90f
 
-#Install support libraries for Alien
-sudo apt-get install libtinyxml-dev
-sudo apt-get install tiled  #for the .tmx files, Tiled Map Editor
+### Install support libraries for Alien
+    sudo apt-get install libtinyxml-dev
+    sudo apt-get install tiled  #for the .tmx files, Tiled Map Editor
 
 ### Unit testing supports w/Google-Test 
     sudo apt-get install libgtest-dev
@@ -32,5 +32,3 @@ sudo apt-get install tiled  #for the .tmx files, Tiled Map Editor
     sudo cmake CMakeLists.txt
     sudo make
     sudo cp *.a /usr/lib
-
-sfsf
