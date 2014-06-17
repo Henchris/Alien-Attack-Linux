@@ -3,7 +3,7 @@
 
 Example project from 'SDL Game Development' by Shaun Mitchell
 
-### To get everything working under a Ubuntu:
+### To get everything working under Ubuntu:
     sudo apt-get install libxmu-dev libxi-dev libopenal-dev
     
     # Download & compile the latest version of libGLEW (1.9?)
