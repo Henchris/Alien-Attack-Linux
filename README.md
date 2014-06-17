@@ -28,3 +28,5 @@ Example project from 'SDL Game Development' by Shaun Mitchell
     sudo cmake CMakeLists.txt
     sudo make
     sudo cp *.a /usr/lib
+
+sfsf
