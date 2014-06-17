@@ -14,7 +14,7 @@ Example project from 'SDL Game Development' by Shaun Mitchell
     sudo make install
     make clean
 
-### Download & compile the latest version SDL2 and SDL2_ttf.  Please see https://gist.github.com/WillSams/e2bb2874ace22b90f90f
+### Download & compile the latest version SDL2 (including image, ttf, and mixer extensions).  Please see https://gist.github.com/WillSams/e2bb2874ace22b90f90f
 
 ### Unit testing supports w/Google-Test 
     sudo apt-get install libgtest-dev
