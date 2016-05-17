@@ -18,7 +18,7 @@ SOURCES = src/AnimatedGraphic.cpp src/Bullet.cpp src/BulletHandler.cpp src/Colli
 	src/Level1Boss.cpp src/LevelParser.cpp src/main.cpp src/MainMenuState.cpp \
 	src/MenuButton.cpp src/ObjectLayer.cpp src/PauseState.cpp \
 	src/PlayState.cpp src/Player.cpp src/RoofTurret.cpp src/ScrollingBackground.cpp \
-	src/ShooterObject.cpp src/SoundManager.cpp src/StateParser.cpp \
+	src/ShooterObject.cpp src/ShotGlider.cpp src/SoundManager.cpp src/StateParser.cpp \
 	src/TextureManager.cpp src/TileLayer.cpp src/Turret.cpp src/base64.cpp  
 
 TARGET_BIN = $(BIN_DIR)/alienattack

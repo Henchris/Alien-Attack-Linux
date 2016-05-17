@@ -1,14 +1,15 @@
-//
-//  SoundManager.cpp
-//  SDL Game Programming Book
-//
-//  Created by shaun mitchell on 26/03/2013.
-//  Copyright (c) 2013 shaun mitchell. All rights reserved.
-//
-
 #include "SoundManager.h"
 
 SoundManager* SoundManager::s_pInstance;
+
+SoundManager* SoundManager::Instance()  {
+    if(s_pInstance == 0)
+    {
+        s_pInstance = new SoundManager();
+        return s_pInstance;
+    }
+    return s_pInstance;
+}
 
 SoundManager::SoundManager()
 {
@@ -16,11 +17,6 @@ SoundManager::SoundManager()
     {   
         std::cout << "Could not init mixer:  " << Mix_GetError() << std::endl;
     }
-    
-   /*if ( Mix_OpenAudio(22050, MIX_DEFAULT_FORMAT, 2, 1024) ==-1)
-    {   
-        std::cout << "Could not init mixer" << Mix_GetError() << std::endl;
-    }*/
 }
 
 SoundManager::~SoundManager()

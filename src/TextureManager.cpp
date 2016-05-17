@@ -1,15 +1,17 @@
-//
-//  TextureManager.cpp
-//  SDL Game Programming Book
-//
-//  Created by shaun mitchell on 31/12/2012.
-//  Copyright (c) 2012 shaun mitchell. All rights reserved.
-//
 #include "TextureManager.h"
-#include <SDL2/SDL_image.h>
-#include <SDL2/SDL.h>
 
 TextureManager* TextureManager::s_pInstance = 0;
+
+TextureManager* TextureManager::Instance()
+    {
+        if(s_pInstance == 0)
+        {
+            s_pInstance = new TextureManager();
+            return s_pInstance;
+        }
+       
+        return s_pInstance;
+    }
 
 bool TextureManager::load(std::string fileName, std::string id, SDL_Renderer* pRenderer)
 {
