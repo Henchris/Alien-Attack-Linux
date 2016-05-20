@@ -82,20 +82,17 @@ void TextureManager::drawTile(std::string id, int margin, int spacing, int x, in
 }
 
 void TextureManager::clearTextureMap() {
-    
-	std::map<std::string,SDL_Texture*>::iterator i;
-	for(i=m_textureMap.begin();i!=m_textureMap.end();i++){
-		if(i->second!=nullptr){			
-			SDL_DestroyTexture(i->second);
-			i->second = nullptr;
-		}
-	}
-	m_textureMap.clear();
+    for(auto i=m_textureMap.begin();i!=m_textureMap.end();i++){
+            if(i->second!=nullptr){			
+                    SDL_DestroyTexture(i->second);
+                    i->second = nullptr;
+            }
+    }
+    m_textureMap.clear();
 }
 
-void TextureManager::clearFromTextureMap(std::string id)
-{
-	SDL_DestroyTexture(m_textureMap[id]);    
-	m_textureMap.erase(id);
+void TextureManager::clearFromTextureMap(std::string id) {
+    SDL_DestroyTexture(m_textureMap[id]);    
+    m_textureMap.erase(id);
 }
 
